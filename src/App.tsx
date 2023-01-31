@@ -9,10 +9,12 @@ import {
   ListItemText,
   Typography,
 } from "@mui/material";
-import DashboardCards from "./Pages/DashboardCards/DashboardCards";
+import DashboardCards from "./Pages/DashboardCards/HorizontelCard";
 import DesktopNavbar from "./Pages/Navbar/DesktopNavbar";
 import BoltIcon from "@mui/icons-material/Bolt";
 import { navigationMenu } from "./RawData/NavigationMenu";
+import HorizontelCard from "./Pages/DashboardCards/HorizontelCard";
+import VerticalCard from "./Pages/DashboardCards/VerticalCard";
 
 export default function App() {
   return (
@@ -65,20 +67,69 @@ export default function App() {
                     <Grid item xs={12} sm={6}>
                       <Grid container spacing={2}>
                         <Grid item xs={12}>
-                          <DashboardCards />
+                          <HorizontelCard imagePath="assets/patern.png" label="Get 50% Off" />
                         </Grid>
                         <Grid item xs={12}>
-                          <DashboardCards />
+                          <HorizontelCard imagePath="assets/banner3.png" label="New Collection Daily Wear"/>
+                        </Grid>
+                      </Grid>
+                    </Grid>
+                    <Grid item xs={12} sm={6}>
+                      <Grid container spacing={2}>
+                        <Grid item xs={6}>
+                          <VerticalCard imagePath="assets/product4.png" label="New Collection Daily Wear"/>
+                        </Grid>
+                        <Grid item xs={6}>
+                          <VerticalCard imagePath="assets/product5.png" label="New Collection Daily Wear"/>
+                        </Grid>
+                      </Grid>
+                    </Grid>
+                  </Grid>
+                </Box>
+                <Box sx={{ mt: 2 }}>
+                  <Grid container spacing={4}>
+                  <Grid item xs={12} sm={6}>
+                      <Grid container spacing={2}>
+                        <Grid item xs={6}>
+                          <VerticalCard imagePath="assets/product2.png" label="New Collection Daily Wear"/>
+                        </Grid>
+                        <Grid item xs={6}>
+                          <VerticalCard imagePath="assets/product1.png" label="New Collection Daily Wear"/>
                         </Grid>
                       </Grid>
                     </Grid>
                     <Grid item xs={12} sm={6}>
                       <Grid container spacing={2}>
                         <Grid item xs={12}>
-                          <DashboardCards />
+                          <HorizontelCard imagePath="assets/banner2.png" label="Get 50% Off" />
                         </Grid>
                         <Grid item xs={12}>
-                          <DashboardCards />
+                          <HorizontelCard imagePath="assets/banner1.png" label="New Collection Daily Wear"/>
+                        </Grid>
+                      </Grid>
+                    </Grid>
+                  </Grid>
+                </Box>
+                <Box sx={{ mt: 2 }}>
+                  <Grid container spacing={4}>
+                    <Grid item xs={12} sm={6}>
+                      <Grid container spacing={2}>
+                        <Grid item xs={12}>
+                          <HorizontelCard imagePath="assets/banner1.png" label="Get 50% Off" />
+                        </Grid>
+                        <Grid item xs={12}>
+                          <HorizontelCard imagePath="assets/banner4.png" label="New Collection Daily Wear"/>
+                        </Grid>
+                      </Grid>
+                    </Grid>
+                    
+                    <Grid item xs={12} sm={6}>
+                      <Grid container spacing={2}>
+                        <Grid item xs={6}>
+                          <VerticalCard imagePath="assets/product1.png" label="New Collection Daily Wear"/>
+                        </Grid>
+                        <Grid item xs={6}>
+                          <VerticalCard imagePath="assets/product6.png" label="New Collection Daily Wear"/>
                         </Grid>
                       </Grid>
                     </Grid>
